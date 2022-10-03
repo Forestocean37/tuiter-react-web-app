@@ -1,0 +1,17 @@
+.wd-bg-color-black {
+    background-color: black;
+}
+
+.wd-grid-row {
+    clear: both;
+}
+
+.wd-float-done {
+    clear: both;
+}
+
+.wd-set-of-hyperlinks li {
+    display: inline-block;
+    color: rgb(110,118,125);
+    padding: 16px;
+}
