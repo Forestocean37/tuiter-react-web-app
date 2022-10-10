@@ -2,92 +2,335 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Explore</title>
 
-    <link href="index.css"
-          rel="stylesheet"/>
+    <link href="../../vendors/bootstrap/css/bootstrap.css" rel="stylesheet"/>
+    <!--    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css" rel="stylesheet"/>
+<!--    <link href="index.css" rel="stylesheet"/>-->
 </head>
+
 <body class="wd-bg-color-black">
 
-<div class="wd-grid-row">
-    <div>
-        <input class="wd-search-tuiter wd-margin-left" id="text-field-search" placeholder="Search Tuiter"/>
+<div class="container pt-2">
+    <div class="row">
+        <div class="col-2 col-xl-2 col-lg-1">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action wd-bg-color-black">
+                    <i class="fab fa-twitter wd-fg-color-white"></i>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action d-flex wd-bg-color-black">
+                    <span><i class="fas fa-home wd-fg-color-white"></i></span> &nbsp;
+                    <span class="d-none d-xl-block d-xl-inline wd-fg-color-white">Home</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action active d-flex wd-bg-color-black">
+                    <span><i class="fas fa-hashtag wd-fg-color-white"></i></span> &nbsp;
+                    <span class="d-none d-xl-block d-xl-inline wd-fg-color-white wd-bg-color-black">Explore</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action d-flex wd-bg-color-black">
+                    <span><i class="fas fa-bell wd-fg-color-white"></i></span> &nbsp;
+                    <span class="d-none d-xl-block d-xl-inline wd-fg-color-white">Notifications</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action d-flex wd-bg-color-black">
+                    <span><i class="fas fa-envelope wd-fg-color-white"></i></span> &nbsp;
+                    <span class="d-none d-xl-block d-xl-inline wd-fg-color-white">Messages</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action d-flex wd-bg-color-black">
+                    <span><i class="fas fa-bookmark wd-fg-color-white"></i></span> &nbsp;
+                    <span class="d-none d-xl-block d-xl-inline wd-fg-color-white">Bookmarks</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action d-flex wd-bg-color-black">
+                    <span><i class="fas fa-list wd-fg-color-white"></i></span> &nbsp;
+                    <span class="d-none d-xl-block d-xl-inline wd-fg-color-white">Lists</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action d-flex wd-bg-color-black">
+                    <span><i class="fas fa-user wd-fg-color-white"></i></span> &nbsp;
+                    <span class="d-none d-xl-block d-xl-inline wd-fg-color-white">Profile</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action d-flex wd-bg-color-black">
+                    <span class="fa-stack fa-2xs">
+                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                        <i class="fa-solid fa-ellipsis fa-stack-1x wd-fg-color-white" style="color: white"></i>
+                    </span> &nbsp;
+                    <span class="d-none d-xl-block d-xl-inline wd-fg-color-white">More</span>
+                </a>
+            </div>
+
+            <form>
+                <button class="btn btn-primary w-100 rounded-pill mt-2" type="submit">Tuit</button>
+            </form>
+        </div>
+
+
+        <div class="col-6 col-xl-6 col-lg-7 pb-3">
+            <div class="row">
+                <div class="col-11 pos-relative">
+                        <span class="position-absolute p-2 wd-fg-color-gray wd-search-icon">
+                                <i class="fas fa-search"></i>
+                        </span>
+                    <input class="ps-5 form-control rounded-pill wd-bg-color-darkgray wd-border-black" placeholder="Search Tuiter"/>
+                </div>
+
+                <div class="col-1">
+                    <a href="#"><i class="fa-solid fa-gear fa-2x float-end wd-fg-color-white"></i></a>
+                </div>
+            </div>
+
+            <ul class="nav nav-tabs mt-2 mb-2">
+                <li class="nav-item">
+                    <a class="nav-link active wd-fg-color-gray" href="for-you.html">For You</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link wd-fg-color-gray" href="trending.html">Trending</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link wd-fg-color-gray" href="news.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link wd-fg-color-gray" href="sports.html">Sports</a>
+                </li>
+                <li class="nav-item d-none d-md-block wd-border-blue-thick">
+                    <a class="nav-link wd-fg-color-white" href="entertainment.html">Entertainment</a>
+                </li>
+            </ul>
+
+            <div class="position-relative">
+                <img src="../../images/starship.png" width="100%"/>
+                <h2 class="position-absolute start-0 bottom-0 ps-2 text-white">SpaceX's Starship</h2>
+            </div>
+
+            <ul class="list-group">
+                <li class="list-group-item wd-bg-color-black">
+                    <div class="row">
+                        <div class="col-10">
+                            <div class="text-secondary">
+                                Web Development
+                            </div>
+                            <div>
+                                <b class="wd-fg-color-white">ReactJS</b>
+                                <span class="fa-stack fa-2xs">
+                                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                        <i class="fa-solid fa-check fa-stack-1x fa-stack fa-inverse"></i>
+                                    </span>
+                                <span class="text-secondary"> - 2h</span>
+                            </div>
+                            <div class="fw-bolder wd-fg-color-white">
+                                React.js is a component based front end library that makes it very easy to build Single
+                                Page Applications or SPAs
+                            </div>
+                        </div>
+                        <div class="col-2 my-auto">
+                            <img class="float-end" src="../../images/react.png" width="90px" height="80px"/>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item wd-bg-color-black">
+                    <div class="row">
+                        <div class="col-10">
+                            <div>
+                                <b class="wd-fg-color-white">Yellowstone</b>
+                                <span class="fa-stack fa-2xs">
+                                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                        <i class="fa-solid fa-check fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                <span class="text-secondary"> - 2h</span>
+                            </div>
+                            <div class="fw-bolder wd-fg-color-white">
+                                Yellowstone National Park is an American national park located in the western United
+                                States, largely in the northwest corner of Wyoming and extending into Montana and Idaho.
+                            </div>
+                            <div class="text-secondary">
+                                357K Tuits
+                            </div>
+                        </div>
+                        <div class="col-2 my-auto">
+                            <img class="float-end" src="../../images/yellowstone1.png" width="90px" height="80px"/>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item wd-bg-color-black">
+                    <div class="row">
+                        <div class="col-10">
+                            <div class="text-secondary">
+                                US Trending
+                            </div>
+                            <div class="fw-bolder wd-fg-color-white">
+                                2022 Home Design
+                            </div>
+                            <div class="text-secondary">
+                                236K Tuits
+                            </div>
+                        </div>
+                        <div class="col-2 my-auto">
+                            <img class="float-end" src="trendingInUS.jpg" width="90px" height="80px"/>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item wd-bg-color-black">
+                    <div class="row">
+                        <div class="col-10">
+                            <div class="text-secondary">
+                                Domestic Affairs
+                            </div>
+                            <div>
+                                <b class="wd-fg-color-white">CNN's Cuomo conundrum</b>
+                                <span class="fa-stack fa-2xs">
+                                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                        <i class="fa-solid fa-check fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                <span class="text-secondary"> - 2h</span>
+                            </div>
+                            <div class="text-secondary">
+                                159K Tuits
+                            </div>
+                        </div>
+                        <div class="col-2 my-auto">
+                            <img class="float-end" src="CNN.jpg" width="90px" height="80px"/>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="col-xl-4 col-lg-4 d-none d-lg-block">
+            <div class="list-group wd-rounded-corners-all-around">
+                <div class="list-group-item fw-bolder wd-bg-color-darkgray wd-fg-color-white">
+                    Who to follow
+                </div>
+
+                <div class="list-group-item wd-bg-color-darkgray">
+                    <div class="row">
+                        <div class="col-2 my-auto">
+                            <img src="../../images/java.png" class="rounded-circle w-100 h-100">
+                        </div>
+                        <div class="col-7 my-auto">
+                            <div>
+                                <span class="fw-bolder wd-fg-color-white">Java</span>
+                                <span class="fa-stack fa-2xs">
+                                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                        <i class="fa-solid fa-check fa-stack-1x fa-inverse"></i>
+                                    </span>
+                            </div>
+                            <div class="wd-fg-color-gray">
+                                @Java
+                            </div>
+                        </div>
+                        <div class="col-3 my-auto">
+                            <button class="btn btn-primary rounded-pill float-end wd-bg-color-white wd-border-white wd-fg-black-bold">
+                                Follow
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-group-item wd-bg-color-darkgray">
+                    <div class="row">
+                        <div class="col-2 my-auto">
+                            <img src="../../images/relativitySpace.png" class="rounded-circle w-100 h-100">
+                        </div>
+                        <div class="col-7 my-auto">
+                            <div class="text-nowrap">
+                                <span class="fw-bolder wd-fg-color-white">Relativity Space</span>
+                                <span class="fa-stack fa-2xs">
+                                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                        <i class="fa-solid fa-check fa-stack-1x fa-inverse"></i>
+                                    </span>
+                            </div>
+                            <div class="wd-fg-color-gray">
+                                @relativityspace
+                            </div>
+                        </div>
+                        <div class="col-3 my-auto">
+                            <button class="btn btn-primary float-end rounded-pill wd-bg-color-white wd-border-white wd-fg-black-bold">
+                                Follow
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-group-item wd-bg-color-darkgray">
+                    <div class="row">
+                        <div class="col-2 my-auto">
+                            <img src="../../images/virginGalactic.png" class="rounded-circle w-100 h-100">
+                        </div>
+                        <div class="col-7 my-auto">
+                            <div class="text-nowrap">
+                                <span class="fw-bolder wd-fg-color-white">Virgin Galactic</span>
+                                <span class="fa-stack fa-2xs">
+                                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                        <i class="fa-solid fa-check fa-stack-1x fa-inverse"></i>
+                                    </span>
+                            </div>
+                            <div class="wd-fg-color-gray">
+                                @virgingalactic
+                            </div>
+                        </div>
+                        <div class="col-3 my-auto">
+                            <button class="btn btn-primary float-end rounded-pill wd-bg-color-white wd-border-white wd-fg-black-bold">
+                                Follow
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-group-item wd-bg-color-darkgray">
+                    <div class="row">
+                        <div class="col-2 my-auto">
+                            <img src="../../images/NASA.png" class="rounded-circle w-100 h-100">
+                        </div>
+                        <div class="col-7 my-auto">
+                            <div>
+                                <span class="fw-bolder wd-fg-color-white">NASA</span>
+                                <span class="fa-stack fa-2xs">
+                                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                        <i class="fa-solid fa-check fa-stack-1x fa-inverse"></i>
+                                    </span>
+                            </div>
+                            <div class="wd-fg-color-gray">
+                                @NASA
+                            </div>
+                        </div>
+                        <div class="col-3 my-auto">
+                            <button class="btn btn-primary float-end rounded-pill wd-bg-color-white wd-border-white wd-fg-black-bold">
+                                Follow
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-group-item wd-bg-color-darkgray">
+                    <div class="row">
+                        <div class="col-2 my-auto">
+                            <img src="../../images/tesla.png" class="rounded-circle w-100 h-100">
+                        </div>
+                        <div class="col-7 my-auto">
+                            <div>
+                                <span class="fw-bolder wd-fg-color-white">Tesla</span>
+                                <span class="fa-stack fa-2xs">
+                                        <i class="fa-solid fa-circle fa-stack-2x"></i>
+                                        <i class="fa-solid fa-check fa-stack-1x fa-inverse"></i>
+                                    </span>
+                            </div>
+                            <div class="wd-fg-color-gray">
+                                @Tesla
+                            </div>
+                        </div>
+                        <div class="col-3 my-auto">
+                            <button class="btn btn-primary float-end rounded-pill wd-bg-color-white wd-border-white wd-fg-black-bold">
+                                Follow
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div>
-        <a href="explore-settings.html"> <img class="wd-gear-icon wd-margin-right" src="gear-icon.jpg"/></a>
-    </div>
-    <div class="wd-float-done"></div>
-
-    <ul class="wd-set-of-hyperlinks">
-        <li class="wd-highlighted"> <a>For you</a></li>
-        <li>Trending</li>
-        <li>COVID-19</li>
-        <li>News</li>
-        <li>Sports</li>
-        <li>Entertainment</li>
-    </ul>
-    <div class="wd-float-done"></div>
-</div>
-
-<hr class="wd-hr-hyperlinks-posts">
-<div class="wd-posts">
-    <span class="wd-grey-text">Trending in Science</span><br>
-    <span class="wd-white-text">Starship</span><br>
-    <span class="wd-grey-text">55.5k Tuits</span>
-</div>
-<div class="wd-posts">
-    <div class="wd-text">
-        <span class="wd-grey-text">Sports Trending</span><br>
-        <span class="wd-white-text">Joe Rogan</span><br/>
-        <span class="wd-grey-text">5,218 Tuits</span>
-    </div>
-    <div class="wd-float-done"></div>
-</div>
-<div class="wd-posts">
-    <span class="wd-white-text">The New York Times</span>
-    <img src="CNN.jpg" class="wd-image">
-    <span class="wd-grey-text">Yesterday</span><br>
-    <span class="wd-white-text">CNN's Cuomo conundrum: A star anchor with a brother in
-        trouble</span><br>
-    <span class="wd-plain-text">The star CNN anchor Chris Cuomo was suspended indefinitely by the
-        network on Tuesday after new details emerged about his efforts to assist his brother,
-        Andrew M. Cuomo, the former governor of New York, as he faced a cascade of sexual
-        harassment accusations that led to the governor’s resignation.</span><br/>
-    <span class="wd-grey-text">126.9k Tuits</span>
-    <div class="wd-float-done"></div>
-</div>
-
-<div class="wd-posts">
-    <span class="wd-grey-text">COVID-19 LIVE</span>
-    <img src="COVID.jpg" class="wd-image"><br/>
-    <span class="wd-white-text">Biden’s claim that Covid pandemic is over sparks debate over
-        future</span><br/>
-    <span class="wd-plain-text">Joe Biden’s recent declaration that the Covid-19 pandemic was over was premature, according to several infectious disease experts, but there was not a consensus among them about whether the remarks will cause a significant change in Americans’ attitude towards the virus and lead to worse public health outcomes.</span><br/>
-    <span class="wd-grey-text">52.9k Tuits</span>
-    <div class="wd-float-done"></div>
-</div>
-
-<div class="wd-posts">
-    <span class="wd-white-text">The Washington Post</span>
-    <img src="washingtonpost.jpg" class="wd-image">
-    <span class="wd-grey-text">Yesterday</span><br>
-    <span class="wd-white-text">Ukraine has always been ready to negotiate. The question is how.</span><br/>
-    <span class="wd-plain-text">It’s important to pay attention to the details. He made the statement right after he announced the illegal annexation of regions of Ukraine that are (at least partly) occupied by Russian troops. So in effect he was saying: “I’ve invaded your country. I’ve killed tens of thousands of your people, created millions of refugees, caused many billions of dollars’ worth of damage, and now I am trying to steal your land. So let’s negotiate.”</span><br/>
-    <span class="wd-grey-text">78.3k Tuits</span>
-    <div class="wd-float-done"></div>
-</div>
-
-<div class="wd-posts">
-    <span class="wd-grey-text">Trending in United States</span>
-    <img src="trendingInUS.jpg" class="wd-image"><br/>
-    <span class="wd-white-text">2022 Design Trends For Your Manufactured Home</span><br/>
-    <span class="wd-plain-text">One of the most common myths about mobile homes is that they are
-        all equal. But the fact is that there are several ways to customize them. Every year, we
-        see more & more options within the manufactured housing industry. These options are new
-        floorplans, layouts, expanded versatility & refreshed design. </span><br/>
-    <span class="wd-grey-text">29.2k Tuits</span>
-    <div class="wd-float-done"></div>
 </div>
 
 </body>
+
 </html>
