@@ -26,17 +26,17 @@ const PostItem = (post) => {
             <a class="float-end text-secondary" href="#"> <i class="fa-solid fa-ellipsis"></i></a>
             <div class="ps-1 text-white"> ${post.title} ${hasTitleUrl(post)} </div>                     
         </div>
-    </a>
+    </div>
     
     <div class="row pt-3">    
         <div class="col-1"></div>
         <div class="col-11">
             <div class="row border rounded-top border-secondary">
-                <img src="${post.image}" class="w-100">
+                <img src="${post.image}" class="w-100"/>
             </div>
             <div class="row border rounded-bottom border-secondary">
                 <div class="w-100 text-white">${post.emphasis}</div>
-                <div clas="text-secondary">${post.text}</div>
+                <div class="text-secondary">${post.text}</div>
                 ${hasTextUrl(post)}
             </div>
         </div>       
