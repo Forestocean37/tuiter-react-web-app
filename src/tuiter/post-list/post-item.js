@@ -36,7 +36,7 @@ const PostItem = (
     }
 ) => {
     return(
-    <div>
+    <div className="list-group-item">
     <div className="row pt-2">
         <div className="col-1">
             <img src={`/images/${post.avatarIcon}`} className="rounded-circle" width="50px" height="50px"/>
@@ -45,18 +45,18 @@ const PostItem = (
         <div className="col-11">
             <span className="ps-1 fw-bold">{post.userName}</span> <i className="ps-1 pt-1 fa fa-check-circle"></i>
             <span className = "ps-1 text-secondary">@{post.handle} · {post.time}</span>
-            <a className="float-end text-secondary" href="#"> <i className="fa-solid fa-ellipsis"></i></a>
+            <a className="float-end text-secondary" href="#"> <i className="fa fa-ellipsis-h"></i></a>
             <div className="ps-1"> {post.title} {hasTitleUrl(post)} </div>
         </div>
     </div>
 
-    <div className="row pt-3">
+    <div className="row pt-2">
         <div className="col-1"></div>
-        <div className="col-11">
-            <div className="row border rounded-top border-secondary">
-                <img src={`/images/${post.image}`}/>
+        <div className="col-11 p-0">
+            <div >
+                <img className="w-100 rounded" src={`/images/${post.image}`}/>
             </div>
-            <div className="row border rounded-bottom border-secondary">
+            <div className="border rounded-bottom border-light pb-2 ps-2 pe-2">
                 <div>{post.emphasis}</div>
                 <div className="text-secondary">{post.text}</div>
                 {hasTextUrl(post)}
