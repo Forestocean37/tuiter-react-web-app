@@ -1,4 +1,7 @@
 import React from "react";
+import {useDispatch} from "react-redux";
+import {deleteTuit} from "./tuits-reducer";
+
 
 const hasTitleUrl = (post) => {
     if(post.hasTitleUrl){
@@ -14,7 +17,7 @@ const hasTextUrl = (post) => {
     return "";
 }
 
-const PostItem = (
+const TuitItem = (
     {
         post = {
             "_id": 234,"topic": "Space",   "userName": "SpaceX",
@@ -29,6 +32,11 @@ const PostItem = (
         }
     }
 ) => {
+    const dispatch = useDispatch();
+    const deleteTuitHandler = (id) => {
+        dispatch(deleteTuit(id));
+    }
+
     return(
     <div className="list-group-item">
     <div className="row pt-2">
@@ -39,7 +47,9 @@ const PostItem = (
         <div className="col-10">
             <span className="ps-1 fw-bold">{post.userName}</span> <i className="ps-1 pt-1 fa fa-check-circle" style={{color: 'blue'}}></i>
             <span className = "ps-1 text-secondary">{post.handle} · {post.time}</span>
-            <a className="float-end text-secondary" href="#"> <i className="fa fa-ellipsis-h"></i></a>
+            {/*<a className="float-end text-secondary" href="#"> <i className="fa fa-ellipsis-h"></i></a>*/}
+            <i className="bi bi-x-lg float-end" onClick={() => deleteTuitHandler(post._id)}></i>
+
         </div>
     </div>
 
@@ -81,4 +91,4 @@ const PostItem = (
     );
 };
 
-export default PostItem;
+export default TuitItem;
